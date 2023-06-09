@@ -28,7 +28,9 @@ class QuestionViewController: UIViewController {
         
         if questionNumber < questions.count - 1 {
             questionNumber += 1
-            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(configureQuestion), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(configureQuestion), userInfo: nil, repeats: false)
+        } else {
+            goesToSummaryPage()
         }
     }
     
@@ -37,6 +39,10 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         configureLayout()
         configureQuestion()
+    }
+    
+    func goesToSummaryPage() {
+        performSegue(withIdentifier: "connectionToSummary", sender: nil)
     }
     
     func configureLayout() {
@@ -57,6 +63,12 @@ class QuestionViewController: UIViewController {
             button.setTitle(buttonTitle, for: .normal)
             button.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let summaryVC = segue.destination as? SummaryViewController
+        else { return }
+        summaryVC.points = points
     }
     /*
     // MARK: - Navigation
