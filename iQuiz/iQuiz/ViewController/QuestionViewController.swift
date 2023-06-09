@@ -20,10 +20,9 @@ class QuestionViewController: UIViewController {
         
         if userGotRight {
             points += 1
-            sender.backgroundColor = UIColor(red: 11/225, green: 161/255, blue: 53/255, alpha: 1.0)
+            sender.backgroundColor = UIColor.colorGreenBackground
         } else {
-            sender.backgroundColor = UIColor(red: 211/225, green: 17/255, blue: 17/255, alpha: 1.0)
-
+            sender.backgroundColor = UIColor.colorRedBackground
         }
         
         if questionNumber < questions.count - 1 {
