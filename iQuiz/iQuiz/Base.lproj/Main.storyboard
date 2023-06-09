@@ -160,19 +160,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acm-iP-eUP">
-                                <rect key="frame" x="64" y="112" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="148.66666666666666" width="265" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final percentage: 20%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGI-7j-WTb">
-                                <rect key="frame" x="64" y="409.33333333333331" width="265" height="31.333333333333314"/>
+                                <rect key="frame" x="64" y="369.33333333333331" width="265" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vly-Il-cgO">
-                                <rect key="frame" x="64" y="512.66666666666663" width="265" height="62"/>
+                                <rect key="frame" x="64" y="472.66666666666669" width="265" height="62.000000000000057"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="jmV-rd-2ET"/>
@@ -187,13 +187,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You finished iQuiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGB-A6-dRT">
-                                <rect key="frame" x="64" y="112" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="72" width="265" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got 2 out of 10 questions right" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsU-VZ-1PO">
-                                <rect key="frame" x="64" y="260.66666666666669" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="220.66666666666666" width="265" height="76.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -203,29 +203,24 @@
                         <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="vly-Il-cgO" secondAttribute="trailing" constant="64" id="0dk-Cd-bFs"/>
-                            <constraint firstItem="acm-iP-eUP" firstAttribute="top" secondItem="jko-73-0J9" secondAttribute="top" constant="112" id="15V-QB-wE3"/>
                             <constraint firstItem="acm-iP-eUP" firstAttribute="leading" secondItem="jko-73-0J9" secondAttribute="leading" constant="64" id="1gt-mh-C5h"/>
-                            <constraint firstItem="acm-iP-eUP" firstAttribute="top" secondItem="jko-73-0J9" secondAttribute="top" constant="112" id="Bgb-6t-9ni"/>
                             <constraint firstItem="vly-Il-cgO" firstAttribute="top" secondItem="lGI-7j-WTb" secondAttribute="bottom" constant="72" id="Fu3-TB-8gJ"/>
                             <constraint firstItem="lGI-7j-WTb" firstAttribute="leading" secondItem="jko-73-0J9" secondAttribute="leading" constant="64" id="JdL-0N-r2o"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="lGI-7j-WTb" secondAttribute="trailing" constant="64" id="L0I-Uk-4VH"/>
                             <constraint firstItem="lGI-7j-WTb" firstAttribute="top" secondItem="xsU-VZ-1PO" secondAttribute="bottom" constant="72" id="LeK-Jp-l6E"/>
                             <constraint firstItem="xsU-VZ-1PO" firstAttribute="top" secondItem="NGB-A6-dRT" secondAttribute="bottom" constant="72" id="O2L-ED-THW"/>
-                            <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="lGI-7j-WTb" secondAttribute="trailing" constant="10264" id="TKQ-Nj-YqJ"/>
                             <constraint firstItem="NGB-A6-dRT" firstAttribute="leading" secondItem="jko-73-0J9" secondAttribute="leading" constant="64" id="Xfh-ui-C9y"/>
                             <constraint firstItem="vly-Il-cgO" firstAttribute="leading" secondItem="jko-73-0J9" secondAttribute="leading" constant="64" id="ZhP-0j-10O"/>
-                            <constraint firstItem="NGB-A6-dRT" firstAttribute="top" secondItem="jko-73-0J9" secondAttribute="top" constant="112" id="aMX-8A-32t"/>
                             <constraint firstAttribute="trailing" secondItem="xsU-VZ-1PO" secondAttribute="trailing" constant="64" id="aZC-u9-4nC"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="NGB-A6-dRT" secondAttribute="trailing" constant="64" id="dJ3-Mi-nn9"/>
                             <constraint firstItem="xsU-VZ-1PO" firstAttribute="top" secondItem="acm-iP-eUP" secondAttribute="bottom" constant="72" id="dxu-O6-Gdz"/>
                             <constraint firstItem="xsU-VZ-1PO" firstAttribute="leading" secondItem="jko-73-0J9" secondAttribute="leading" constant="64" id="eo8-bm-X5V"/>
-                            <constraint firstItem="acm-iP-eUP" firstAttribute="top" secondItem="jko-73-0J9" secondAttribute="top" constant="112" id="nBk-tU-k5Y"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="NGB-A6-dRT" secondAttribute="trailing" constant="64" id="p7z-Ij-qTn"/>
-                            <constraint firstItem="NGB-A6-dRT" firstAttribute="top" secondItem="acm-iP-eUP" secondAttribute="bottom" constant="112" id="pNW-Ta-O8b"/>
                             <constraint firstItem="lGI-7j-WTb" firstAttribute="top" secondItem="xsU-VZ-1PO" secondAttribute="bottom" constant="72" id="r66-EC-C2g"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="acm-iP-eUP" secondAttribute="trailing" constant="64" id="suj-Lz-ob7"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="lGI-7j-WTb" secondAttribute="trailing" constant="64" id="t54-fI-DP8"/>
                             <constraint firstItem="jko-73-0J9" firstAttribute="trailing" secondItem="acm-iP-eUP" secondAttribute="trailing" constant="64" id="wXZ-AE-JOd"/>
+                            <constraint firstItem="NGB-A6-dRT" firstAttribute="top" secondItem="jko-73-0J9" secondAttribute="top" constant="72" id="ywD-uh-FVJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9iY-xE-Qnc"/>
@@ -233,6 +228,7 @@
                         <outlet property="buttonRestart" destination="vly-Il-cgO" id="ZwH-99-GvF"/>
                         <outlet property="percentageLabel" destination="lGI-7j-WTb" id="xp4-Fv-AgX"/>
                         <outlet property="resultLabel" destination="xsU-VZ-1PO" id="JrL-Rq-tny"/>
+                        <outlet property="titleLabel" destination="NGB-A6-dRT" id="ytF-ye-xOI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGu-fj-moK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -259,7 +255,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qWD-KT-Ahl"/>
         <segue reference="F5D-Ax-UEF"/>
     </inferredMetricsTieBreakers>
     <resources>

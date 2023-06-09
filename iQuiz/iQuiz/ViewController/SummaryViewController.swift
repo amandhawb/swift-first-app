@@ -15,6 +15,8 @@ class SummaryViewController: UIViewController {
     
     @IBOutlet weak var buttonRestart: UIButton!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var points: Int?
     
     override func viewDidLoad() {
